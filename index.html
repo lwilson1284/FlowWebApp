@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FlowForward - Menstrual Cycle Information</title>
+</head>
+<body class="pink-theme">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="imgs/flow-logo.JPEG" alt="FlowForward Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Phase Info</a></li>
+                <li><a href="flowforward.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="information-section">
+        <section class="phase-name"><h2>Menstrual Cycle Phases</h2></section>
+
+        <div class="phase-card" id="menstruation-card">
+            <div class="page" id="page1">
+                <h3>Menstruation Overview</h3>
+                <p>Menstruation (Days 0-7), commonly known as the menstrual period, marks the beginning of the menstrual cycle.
+                     It typically lasts 3 to 7 days but can vary. During this phase, the uterine lining, which thickened
+                      in preparation for a possible pregnancy, sheds and exits the body through the vagina.
+                       Menstruation is controlled by hormonal changes, specifically a drop in estrogen and progesterone.</p>
+                <button onclick="changePage('menstruation-card', 'page2')">Physical Changes</button>
+            </div>
+
+            <div class="page" id="page2" style="display: none;">
+                <h3>Menstruation: Physical Changes</h3>
+                <ul>
+                    <li><b>Bleeding:</b> Flow can vary, but on average, a woman loses about 30-40 milliliters of blood during her period.</li>
+                    <li>Cramps: Many women experience uterine cramps as the uterus contracts to expel its lining.</li>
+                    <li>Fatigue: Hormonal changes can contribute to feelings of tiredness.</li>
+                </ul>
+                <p>Appropriate workouts include walking and flexibility training</p>
+                <button onclick="changePage('menstruation-card', 'page1')">Overview</button>
+            </div>
+        </div>
+
+        <div class="phase-card" id="follicular-card">
+            <div class="page" id="page1">
+                <h3>Follicular Phase Overview</h3>
+                <p>The follicular phase (Days 8-13) begins on the first day of menstruation and lasts until ovulation. 
+                    It is characterized by the development of ovarian follicles, each containing an immature egg. 
+                    Hormones, particularly follicle-stimulating hormone (FSH), stimulate the growth of these follicles.</p>
+                <button onclick="changePage('follicular-card', 'page2')">Physical Changes</button>
+            </div>
+
+            <div class="page" id="page2" style="display: none;">
+                <h3>Follicular Phase: Physical Changes</h3>
+                <ul>
+                    <li>Rise in Estrogen: Estrogen levels increase, leading to the thickening of the uterine lining.</li>
+                    <li>Improved Mood: Many women report increased energy and a better mood during this phase.</li>
+                    <li>Growth of Follicles: Multiple follicles develop in the ovaries, but typically only one becomes dominant.</li>
+                </ul>
+                <p>Appropriate workouts include cardio and strength training</p>
+                <button onclick="changePage('follicular-card', 'page1')">Overview</button>
+            </div>
+        </div>
+
+        <div class="phase-card" id="ovulation-card">
+            <div class="page" id="page1">
+                <h3>Ovulation Overview</h3>
+                <p>Ovulation (Days 14-17) marks the midpoint of the menstrual cycle and occurs around the 14th day in a typical 28-day cycle.
+                     The mature follicle bursts, releasing an egg into the fallopian tube. 
+                    This is a crucial phase for fertility, as it is the most fertile time in the menstrual cycle.</p>
+                <button onclick="changePage('ovulation-card', 'page2')">Physical Changes</button>
+            </div>
+
+            <div class="page" id="page2" style="display: none;">
+                <h3>Ovulation: Physical Changes</h3>
+                <ul>
+                    <li>Increase in Body Temperature: Basal body temperature rises slightly after ovulation.</li>
+                    <li>Cervical Mucus Changes: Cervical mucus becomes clear, slippery, and stretchy, resembling egg whites.</li>
+                    <li>Libido Peaks: Some women experience an increase in sexual desire.</li>
+                </ul>
+                <p>Appropriate workouts include high-intensity interval training</p>
+                <button onclick="changePage('ovulation-card', 'page1')">Overview</button>
+            </div>
+        </div>
+
+        <div class="phase-card" id="luteal-card">
+            <div class="page" id="page1">
+                <h3>Luteal Phase Overview</h3>
+                <p>The luteal phase (Days 17-31) begins after ovulation and lasts until the start of the next menstrual period.
+                     After the follicle releases the egg, it transforms into a structure called the corpus luteum,4
+                    which produces progesterone to prepare the uterus for a potential pregnancy.</p>
+                <button onclick="changePage('luteal-card', 'page2')">Physical Changes</button>
+            </div>
+
+            <div class="page" id="page2" style="display: none;">
+                <h3>Luteal Phase: Physical Changes</h3>
+                <ul>
+                    <li>Increased Progesterone: Progesterone levels rise, causing the uterine lining to thicken further.</li>
+                    <li>Breast Tenderness: Some women may experience breast tenderness or swelling.</li>
+                    <li>Mood Changes: Hormonal fluctuations can lead to mood swings or irritability.</li>
+                </ul>
+                <p>Appropriate workouts include strength training and walking</p>
+                <button onclick="changePage('luteal-card', 'page1')">Overview</button>
+            </div>
+        </div>
+
+        <button onclick="window.location.href = 'quiz.html'">Take Quiz</button>
+    </section>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

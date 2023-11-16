@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pink-theme {
+    background-color: #FFECF2; /* Light pink background */
+    color: whitesmoke
+}
+
+.app-info {
+    background-color: #FF69B4; /* Darker pink background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header {
+    background-color: #e9b6bf; /* Light pink header background */
+    color: #e9b6bf;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.phase-name {
+    font-size: 24px;
+    font-weight: bold;
+    color:#FF69B4;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.information-section {
+    margin: 20px;
+}
+
+.phase-card {
+    background-color: #FF69B4; /* Lighter pink card background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #a4ccd1; /* Matching button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin:0 auto;
+    display:block;
+}
+
+button:hover {
+    background-color: #266f79;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+ /* Updated CSS for the quiz */
+.quiz-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #FF69B4;
+    color: white;
+  }
+  
+  .quiz-container p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px; /* Add space above each question */
+  }
+  
+  .question label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+  
+  .quiz-container input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    accent-color: #a4ccd1;
+  }
+  
